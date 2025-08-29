@@ -2,71 +2,260 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment-5</title>
-    <!-- Use daisyUI from CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Hind & Madurai Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Font-Awsome CDN Link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="flex items-center justify-between bg-white p-2 shadow w-full">
-      <!-- Left side -->
-      <div class="flex items-center gap-2">
-        <!-- Logo -->
-        <img
-          src="your-logo.png"
-          alt="logo"
-          class="w-8 h-8 rounded-full border"
-        />
+  <body class="bg-green-50 p-4">
+    <div class="grid grid-cols-4 gap-4">
+      <!-- Left Side (Emergency Cards) -->
+      <div class="col-span-3 grid grid-cols-3 gap-4">
+        <!-- National Emergency -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img
+            src="./assets/emergency.png"
+            class="w-10 h-10 mb-2"
+            alt="emergency"
+          />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">National Emergency Number</h2>
+          <p class="text-gray-600">National Emergency</p>
+          <p class="text-2xl font-bold mt-2">999</p>
+          <p class="text-sm text-gray-500">All</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
 
-        <!-- Text -->
-        <span class="text-[#006747] font-bold">Emergency<br />Service</span>
+        <!-- Police -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img src="./assets/police.png" class="w-10 h-10 mb-2" alt="police" />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Police Helpline Number</h2>
+          <p class="text-gray-600">Police</p>
+          <p class="text-2xl font-bold mt-2">999</p>
+          <p class="text-sm text-gray-500">Police</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Fire Service -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img src="./assets/fire.png" class="w-10 h-10 mb-2" alt="fire" />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Fire Service Number</h2>
+          <p class="text-gray-600">Fire Service</p>
+          <p class="text-2xl font-bold mt-2">999</p>
+          <p class="text-sm text-gray-500">Fire</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Ambulance -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img
+            src="./assets/ambulance.png"
+            class="w-10 h-10 mb-2"
+            alt="ambulance"
+          />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Ambulance Service</h2>
+          <p class="text-gray-600">Ambulance</p>
+          <p class="text-2xl font-bold mt-2">1994-999999</p>
+          <p class="text-sm text-gray-500">Health</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Women & Child -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img
+            src="./assets/emergency.png"
+            class="w-10 h-10 mb-2"
+            alt="emergency"
+          />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Women & Child Helpline</h2>
+          <p class="text-gray-600">Women & Child Helpline</p>
+          <p class="text-2xl font-bold mt-2">109</p>
+          <p class="text-sm text-gray-500">Help</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Anti-Corruption -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img
+            src="./assets/emergency.png"
+            class="w-10 h-10 mb-2"
+            alt="emergency"
+          />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Anti-Corruption Helpline</h2>
+          <p class="text-gray-600">Anti-Corruption</p>
+          <p class="text-2xl font-bold mt-2">106</p>
+          <p class="text-sm text-gray-500">Govt.</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Electricity -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img
+            src="./assets/electricity.png"
+            class="w-10 h-10 mb-2"
+            alt="electricity"
+          />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Electricity Helpline</h2>
+          <p class="text-gray-600">Electricity Outage</p>
+          <p class="text-2xl font-bold mt-2">16216</p>
+          <p class="text-sm text-gray-500">Electricity</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Brac -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img src="./assets/brac.png" class="w-10 h-10 mb-2" alt="brac" />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Brac Helpline</h2>
+          <p class="text-gray-600">Brac</p>
+          <p class="text-2xl font-bold mt-2">16445</p>
+          <p class="text-sm text-gray-500">NGO</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Railway -->
+        <div class="bg-white rounded-xl shadow p-4 relative">
+          <img src="./assets/rail.png" class="w-10 h-10 mb-2" alt="railway" />
+          <img
+            src="./assets/heart.png"
+            class="w-6 h-6 absolute top-4 right-4"
+            alt="heart"
+          />
+          <h2 class="font-bold text-lg">Bangladesh Railway Helpline</h2>
+          <p class="text-gray-600">Bangladesh Railway</p>
+          <p class="text-2xl font-bold mt-2">163</p>
+          <p class="text-sm text-gray-500">Travel</p>
+          <div class="flex gap-2 mt-4">
+            <button class="flex-1 px-5 py-2 border rounded-lg text-base">
+              Copy
+            </button>
+            <button
+              class="flex-1 px-5 py-2 bg-green-600 text-white rounded-lg text-base"
+            >
+              Call
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- Right side -->
-      <div class="flex items-center gap-2">
-        <!-- Heart badge -->
-        <div
-          class="flex items-center gap-1 bg-green-100 px-3 py-1 rounded-full text-sm"
-        >
-          <span>0</span>
-          <span class="text-red-600">❤️</span>
+      <!-- Right Side (Call History) -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg">Call History</h2>
+          <button
+            class="px-4 py-2 bg-green-500 text-white rounded-lg text-base"
+          >
+            Clear
+          </button>
         </div>
-
-        <!-- Coin badge -->
-        <div
-          class="flex items-center gap-1 bg-green-100 px-3 py-1 rounded-full text-sm"
-        >
-          <span>100</span>
-          <span class="text-yellow-500">🪙</span>
         </div>
-
-        <!-- Copy button -->
-        <button
-          class="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded-full text-sm"
-        >
-          2 Copy
-        </button>
       </div>
     </div>
   </body>
